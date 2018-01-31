@@ -1,0 +1,86 @@
+POST /goform/formLogin HTTP/1.1
+Host: 192.168.0.55
+Connection: keep-alive
+Content-Length: 68
+Cache-Control: max-age=0
+Origin: http://192.168.0.55
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://192.168.0.55/login_new.asp
+Accept-`	Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+
+pwd=password&login_button.x=44&login_button.y=12&err_flag=0&err_msg=
+
+
+
+ok ±â´Ù¸²
+HTTP/1.0 200 OK
+Server: GoAhead-Webs
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache
+Cache-control: no-cache
+Content-Type: text/html
+
+
+GET /accept.asp HTTP/1.1
+Host: 192.168.0.55
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://192.168.0.55/goform/formLogin
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+ok ±â´Ù¸² -> cookie ¾òÀ½
+HTTP/1.1 200 OK
+Date: Thu Nov  4 01:11:32 2038
+Server: GoAhead-Webs
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache
+Cache-Control: no-cache
+Set-Cookie: SID=5297
+Content-type: text/html
+Transfer-Encoding: chunked
+
+
+
+POST /goform/formSetPoePortCfg HTTP/1.1
+Host: 192.168.0.55
+Connection: keep-alive
+Content-Length: 329
+Cache-Control: max-age=0
+Origin: http://192.168.0.55
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://192.168.0.55/base/poe_port_cfg.asp
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: SID=867
+
+unit_no=1&java_port=0&applet_port=&applet_unit=&dbgopt=0&inputBox_interface1=&poeAdminMode=1&poePriority=1&highPowMode=4&poeDetectionMode=3&poe_timer_ctrl_list=26&poePowerLimitType=4&poePowerLimit=30000&CBox_1=1&inputBox_interface1=&err_flag=0&err_msg=&multiple_ports=0&selectedPorts=g1%3B&submt=16&refrsh=&click_sched=&sched_id=
+
+ok ±â´Ù¸²
+
+POST /goform/formSetPoePortCfg HTTP/1.1
+Host: 192.168.0.55
+Connection: keep-alive
+Content-Length: 329
+Cache-Control: max-age=0
+Origin: http://192.168.0.55
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://192.168.0.55/base/poe_port_cfg.asp
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: SID=3978
+
+unit_no=1&java_port=0&applet_port=&applet_unit=&dbgopt=0&inputBox_interface1=&poeAdminMode=2&poePriority=1&highPowMode=4&poeDetectionMode=3&poe_timer_ctrl_list=26&poePowerLimitType=4&poePowerLimit=30000&CBox_1=1&inputBox_interface1=&err_flag=0&err_msg=&multiple_ports=0&selectedPorts=g1%3B&submt=16&refrsh=&click_sched=&sched_id=H??hZ1
