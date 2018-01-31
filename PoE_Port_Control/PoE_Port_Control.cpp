@@ -13,7 +13,7 @@
 
 
 SOCKET sock;
-#define POE_HUB_ADDR "192.168.0.48"
+#define POE_HUB_ADDR "192.168.0.55"
 
 // 소켓 함수 오류 출력 후 종료
 void err_quit(char *msg)
@@ -111,7 +111,7 @@ bool login(const char* ip, const char* sid = NULL)
 	char buf[1024];
 	printf("*** Login\n");
 	if (sid)
-		sprintf(buf, LOGIN_COOKIE, ip, ip , sid);
+		sprintf(buf, LOGIN_COOKIE, ip, ip, ip, sid);
 	else
 		sprintf(buf, LOGIN, ip, ip);
 		
@@ -181,7 +181,7 @@ int main()
 {
 	char sid[10] = { 0, };
 	char buf[1024];
-	int port = 24;
+	int port = 15;
 	// 윈속 초기화
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
